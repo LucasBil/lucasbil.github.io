@@ -4,14 +4,6 @@ on:
   push:
     branches: [ "main" ]
 
-# Permissions for the GitHub token : Workflows have read and write permissions in the repository for all scope
-permissions:
-  contents: read
-  pull-requests: write
-  issues: write
-  deployments: write
-
-
 jobs:
   build:
     runs-on: ubuntu-latest
